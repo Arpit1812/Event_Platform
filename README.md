@@ -520,158 +520,187 @@ body:has(.card[data-color="green"]:hover) {
   background-color: rgb(var(--green-rgb) / 25%);
 }
 
+/* ========================================== TAILWIND STYLES */
 @layer utilities {
-  .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
   }
 
-  .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+  .flex-center {
+    @apply flex justify-center items-center;
   }
 
-  .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+  .flex-between {
+    @apply flex justify-between items-center;
   }
 
-  .blue-gradient_text {
-    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+  /* TYPOGRAPHY */
+  /* 64 */
+  .h1-bold {
+    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
   }
 
-  .input {
-    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+  /* 40 */
+  .h2-bold {
+    @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  }
+
+  .h2-medium {
+    @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  }
+
+  /* 36 */
+  .h3-bold {
+    @apply font-bold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+  }
+
+  .h3-medium {
+    @apply font-medium text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+  }
+
+  /* 32 */
+  .h4-medium {
+    @apply font-medium text-[32px] leading-[40px];
+  }
+
+  /* 28 */
+  .h5-bold {
+    @apply font-bold text-[28px] leading-[36px];
+  }
+
+  /* 24 */
+  .p-bold-24 {
+    @apply font-bold text-[24px] leading-[36px];
+  }
+
+  .p-medium-24 {
+    @apply font-medium text-[24px] leading-[36px];
+  }
+
+  .p-regular-24 {
+    @apply font-normal text-[24px] leading-[36px];
+  }
+
+  /* 20 */
+  .p-bold-20 {
+    @apply font-bold text-[20px] leading-[30px] tracking-[2%];
+  }
+
+  .p-semibold-20 {
+    @apply text-[20px] font-semibold leading-[30px] tracking-[2%];
+  }
+
+  .p-medium-20 {
+    @apply text-[20px] font-medium leading-[30px];
+  }
+
+  .p-regular-20 {
+    @apply text-[20px] font-normal leading-[30px] tracking-[2%];
+  }
+
+  /* 18 */
+  .p-semibold-18 {
+    @apply text-[18px] font-semibold leading-[28px] tracking-[2%];
+  }
+
+  .p-medium-18 {
+    @apply text-[18px] font-medium leading-[28px];
+  }
+
+  .p-regular-18 {
+    @apply text-[18px] font-normal leading-[28px] tracking-[2%];
+  }
+
+  /* 16 */
+  .p-bold-16 {
+    @apply text-[16px] font-bold leading-[24px];
+  }
+
+  .p-medium-16 {
+    @apply text-[16px] font-medium leading-[24px];
+  }
+
+  .p-regular-16 {
+    @apply text-[16px] font-normal leading-[24px];
+  }
+
+  /* 14 */
+  .p-semibold-14 {
+    @apply text-[14px] font-semibold leading-[20px];
+  }
+
+  .p-medium-14 {
+    @apply text-[14px] font-medium leading-[20px];
+  }
+
+  .p-regular-14 {
+    @apply text-[14px] font-normal leading-[20px];
+  }
+
+  /* 12 */
+  .p-medium-12 {
+    @apply text-[12px] font-medium leading-[20px];
+  }
+
+  /* SHADCN OVERRIDES */
+  .select-field {
+    @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+  }
+
+  .input-field {
+    @apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
   }
 
   .textarea {
-    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
+    @apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
   }
 
-  .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+  .button {
+    @apply rounded-full h-[54px] p-regular-16;
   }
 
-  .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+  .select-item {
+    @apply py-3 cursor-pointer  focus:bg-primary-50;
   }
 
-  .footer {
-    @apply max-w-5xl mx-auto sm:px-16 pb-6 px-8 flex flex-col gap-7;
-  }
-
-  .footer-container {
-    @apply flex flex-wrap gap-7 items-center justify-between;
-  }
-
-  .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
-  }
-
-  .neo-btn {
-    @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
-  }
-
-  .cta {
-    @apply w-full flex items-center md:flex-row flex-col sm:mt-16 mt-8 gap-7;
-  }
-
-  .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+  .toggle-switch {
+    @apply bg-gray-300 !important;
   }
 }
 
-.glassmorphism {
-  background: rgba(8, 116, 239, 0.07);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+/* ========================================== CLERK STYLES */
+.cl-logoImage {
+  height: 38px;
 }
 
-.logo {
-  border-radius: 8.889px;
-  background: #fff;
-  box-shadow: 0px 10px 35px -4px rgba(67, 83, 255, 0.15),
-    0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
+.cl-userButtonBox {
+  flex-direction: row-reverse;
 }
 
-.block-container {
-  position: relative;
-  transition: 250ms;
-  perspective: 500px;
+.cl-userButtonOuterIdentifier {
+  font-size: 16px;
 }
 
-.block-container .btn-back {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: inherit;
-  height: inherit;
-  transition: 250ms;
-  transform-style: preserve-3d;
-  transform-origin: bottom right;
-  transform: rotateZ(15deg);
-  will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
+.cl-userButtonPopoverCard {
+  right: 4px !important;
 }
 
-.block-container .btn-back-red {
-  background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
+.cl-formButtonPrimary:hover,
+.cl-formButtonPrimary:focus,
+.cl-formButtonPrimary:active {
+  background-color: #705CF7
 }
 
-.block-container .btn-back-green {
-  background: linear-gradient(135deg, #adfda2 -20%, #11d3f3 120%);
+/* ========================================== REACT-DATEPICKER STYLES */
+.datePicker {
+  width: 100%;
 }
 
-.block-container .btn-back-yellow {
-  background: linear-gradient(135deg, #f7971e -20%, #ffd200 120%);
-}
-
-.block-container .btn-back-blue {
-  background: linear-gradient(135deg, #0061ff -20%, #60efff 120%);
-}
-
-.block-container .btn-back-orange {
-  background: linear-gradient(135deg, #ff0f7b -20%, #f89b29 120%);
-}
-
-.block-container .btn-back-pink {
-  background: linear-gradient(135deg, #e81cff -20%, #40c9ff 120%);
-}
-
-.block-container .btn-back-black {
-  background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
-}
-
-.block-container .btn-front {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  width: inherit;
-  height: inherit;
-  background-color: #ffffff33;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  transition: 250ms;
-  transform-style: preserve-3d;
-  transform-origin: top left;
-  overflow: hidden;
-}
-
-.block-container:hover > .btn-back {
-  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
-}
-
-.block-container:hover > .btn-front {
-  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
-}
-
-/* Neo Brutalism */
-.neo-brutalism-blue {
-  background: #2b77e7;
-  position: relative;
-  border-radius: 10px;
-  border: #2b77e7;
-  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
-    0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
+.react-datepicker__input-container input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  margin-left: 16px;
 }
 
 .neo-brutalism-white {
@@ -1172,6 +1201,7 @@ export default {
 >>>>>>> 3f7ac82 (Update README.md)
 }
 ```
+
 </details>
 
 <details>
