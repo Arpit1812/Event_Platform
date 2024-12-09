@@ -18,3 +18,9 @@ docs/
 # Ignore specific file types
 *.md
 *.test.js
+
+node_modules
+.next
+dist
+build
+
