@@ -1,13 +1,24 @@
  import { authMiddleware } from "@clerk/nextjs";
+ //import { clerkClient } from '@clerk/nextjs/server';
  
-export default authMiddleware({
+ export default authMiddleware({
   publicRoutes: [
-    '/',
-    '/events/:id',
-    '/api/webhook/clerk',
-    '/api/webhook/stripe',
-    '/api/uploadthing'
-  ],
+  '/',
+  '/events/:id',
+  '/api/webhook/clerk',
+  '/api/webhook/stripe',
+  '/api/uploadthing'
+],
+
+
+// export default authMiddleware({
+//   publicRoutes,
+
+//   // async afterAuth(auth, req) {
+//   //   if (!auth.userId){
+//   //     const user = await clerkClient.users.getUser(auth, userId)
+//   //   }
+//   // },
   ignoredRoutes: [
     '/api/webhook/clerk',
     '/api/webhook/stripe',
