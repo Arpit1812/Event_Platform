@@ -3,9 +3,12 @@ export const headerLinks = [
     label: 'Home',
     route: '/',
   },
-  {label: 'Create Event',
-   route: '/events/create',
+  {label: 'About Us',
+   route: '/aboutus',
   },
+  // {label: 'My Profile',
+  //  route: '/profile',
+  // },
   {
     label: 'Events',
     route: '/events',
@@ -21,9 +24,13 @@ export const headerLinks = [
     ],
   },
   {
-    label: 'My Profile',
-    route: '/profile',
+    label: 'Contact Us',
+    route: '/Contactus',
   },
+  // {
+  //   label: 'Create Event',
+  //   route: '/events/create',
+  // },
 ];
 export const eventDefaultValues = {
   title: '',
