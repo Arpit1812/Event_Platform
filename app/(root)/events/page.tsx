@@ -20,13 +20,6 @@ import Search from '@/components/shared/Search';
     limit: 6
   })
 
-  const events = await getAllEvents({
-    query: searchText,
-    category,
-    page,
-    limit: 6
-  })
-
 // 'use client';
 
 // import React, { useEffect, useState } from 'react';
