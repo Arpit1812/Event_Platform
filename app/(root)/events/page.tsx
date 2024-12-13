@@ -1,7 +1,24 @@
-export default function EventsPage() {
-    return <h1>Hello World</h1>;
-  }
+import { getAllEvents } from '@/lib/actions/event.actions';
+import CategoryFilter from '@/components/shared/CategoryFilter';
+import Collection from '@/components/shared/Collection';
+import { SearchParamProps } from '@/types';
+import Search from '@/components/shared/Search';
+
+// export default function EventsPage() {
+//     return <h1>Hello World</h1>;
+//   }
   
+  export default async function events({ searchParams }: SearchParamProps) {
+    const page = Number(searchParams?.page) || 1;
+    const searchText = (searchParams?.query as string) || '';
+    const category = (searchParams?.category as string) || '';
+  
+  const events = await getAllEvents({
+    query: searchText,
+    category,
+    page,
+    limit: 6
+  })
 
 
 // 'use client';
@@ -37,24 +54,26 @@ export default function EventsPage() {
 //     return <div>No events available.</div>;
 //   }
 
-//   return (
-//     <div className="p-4">
-//       <h1 className="text-2xl font-bold mb-4">All Events</h1>
-//       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-//         {events.map((event) => (
-//           <li key={event.id} className="border p-4 rounded shadow">
-//             <h2 className="text-xl font-semibold">{event.title}</h2>
-//             <p className="text-gray-600">{event.description}</p>
-//             <p className="text-sm text-gray-500">Location: {event.location}</p>
-//             <p className="text-sm text-gray-500">
-//               Date: {new Date(event.startDateTime).toLocaleString()} -{' '}
-//               {new Date(event.endDateTime).toLocaleString()}
-//             </p>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
+  return (
+  <>
+  <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
+  <h2 className="h2-bold">Trust by <br /> Thousands of Events</h2>
 
-// export default AllEvents;
+  <div className="flex w-full flex-col gap-5 md:flex-row">
+    <Search />
+    <CategoryFilter />
+  </div>
+
+  <Collection 
+    data={events?.data}
+    emptyTitle="No Events Found"
+    emptyStateSubtext="Come back later"
+    collectionType="All_Events"
+    limit={6}
+    page={page}
+    totalPages={events?.totalPages}
+  />
+</section>
+</>
+)
+};
