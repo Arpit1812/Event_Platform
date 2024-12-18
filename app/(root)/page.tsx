@@ -114,7 +114,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           <div className="flex items-center gap-8 lg:gap-32.5">
             <div className="relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2">
               <Image
-                src="/images/about/about-light-01.png"
+                src="/assets/images/process-home.png"
                 alt="About"
                 className="dark:hidden"
                 fill
