@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FFFDD0] text-black py-12">
+    <footer className="bg-[#475569] text-white tw-text-opacity-1 py-12">
       <div className="wrapper flex flex-col gap-8">
         {/* Top Section */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
@@ -12,6 +12,7 @@ const Footer = () => {
           <div className="flex items-center sm:items-start">
             <Link href="/">
               <Image
+              //className="bg-[#ffffff]"
                 src="/assets/images/logo.svg"
                 alt="logo"
                 width={128}

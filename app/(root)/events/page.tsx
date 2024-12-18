@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-export default function EventsPage() {
-    return <h1>Hello World</h1>;
-  }
-=======
 import { getAllEvents } from '@/lib/actions/event.actions';
 import CategoryFilter from '@/components/shared/CategoryFilter';
 import Collection from '@/components/shared/Collection';
@@ -12,7 +7,6 @@ import Search from '@/components/shared/Search';
 // export default function EventsPage() {
 //     return <h1>Hello World</h1>;
 //   }
->>>>>>> d56cffd64c9f5b2da8e0c3d03ce67608874feeab
   
   export default async function events({ searchParams }: SearchParamProps) {
     const page = Number(searchParams?.page) || 1;
@@ -28,48 +22,6 @@ import Search from '@/components/shared/Search';
 
 // 'use client';
 
-<<<<<<< HEAD
-// 'use client';
-
-// import React, { useEffect, useState } from 'react';
- 
-// import Checkout from './Checkout';
-// import { SignedIn, SignedOut } from '@clerk/nextjs'
-// import Link from 'next/link'
-// // import React from 'react'
-// // import { Button } from '../ui/button'
-// // import Checkout from './Checkout'
-// import { Button } from "@/components/ui/button"
-// // import { useState } from "react"
-
-// import "react-datepicker/dist/react-datepicker.css";
-
-// const AllEvents = () => {
-//   const [events, setEvents] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   // Fetch events from the API
-//   useEffect(() => {
-//     const fetchEvents = async () => {
-//       try {
-//         const response = await fetch('/api/all-events/eventroute'); // Ensure this matches your API path
-//         const data = await response.json();
-//         setEvents(data.events); // Assuming the API returns an object with an `events` array
-//       } catch (error) {
-//         console.error('Error fetching events:', error);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchEvents();
-//   }, []);
-
-//   if (loading) {
-//     return <div>Loading...</div>;
-//   }
-
-=======
 // import React, { useEffect, useState } from 'react';
 
 // const AllEvents = () => {
@@ -97,12 +49,10 @@ import Search from '@/components/shared/Search';
 //     return <div>Loading...</div>;
 //   }
 
->>>>>>> d56cffd64c9f5b2da8e0c3d03ce67608874feeab
 //   if (events.length === 0) {
 //     return <div>No events available.</div>;
 //   }
 
-<<<<<<< HEAD
 //   return (
 //     <div className="p-4">
 //       <h1 className="text-2xl font-bold mb-4">All Events</h1>
@@ -180,4 +130,4 @@ import Search from '@/components/shared/Search';
 </>
 )
 };
->>>>>>> d56cffd64c9f5b2da8e0c3d03ce67608874feeab
+//>>>>>>> d56cffd64c9f5b2da8e0c3d03ce67608874feeab
