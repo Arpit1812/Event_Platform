@@ -275,3 +275,53 @@ body {
   background-color: #624cf5 !important;
 }
 
+#neon-section {
+  position: relative;
+  height: 300px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(236, 71, 85); /* Initial color */
+  background-size: 400% 400%; /* Ensure smooth transitions */
+  animation: colorTransition 13s infinite; /* Adjust duration for slower or faster changes */
+}
+
+@keyframes colorTransition {
+  0% {
+    background-color: rgba(236, 71, 85, 1); /* Red */
+  }
+  25% {
+    background-color: rgba(148, 0, 211, 1); /* Purple */
+  }
+  50% {
+    background-color: rgba(0, 191, 255, 1); /* Blue */
+  }
+  75% {
+    background-color: rgba(50, 205, 50, 1); /* Green */
+  }
+  100% {
+    background-color: rgba(236, 71, 85, 1); /* Back to Red */
+  }
+}
+
+
+@keyframes colorTransition {
+  0% {
+    background-color: rgba(236, 71, 85, 1); /* Red */
+  }
+  25% {
+    background-color: rgba(148, 0, 211, 1); /* Purple */
+  }
+  50% {
+    background-color: rgba(0, 191, 255, 1); /* Blue */
+  }
+  75% {
+    background-color: rgba(50, 205, 50, 1); /* Green */
+  }
+  100% {
+    background-color: rgba(236, 71, 85, 1); /* Back to Red */
+  }
+}
+
+
