@@ -17,8 +17,8 @@ const event = await getEventById(id);
   })
 
   return (
-    <>
-    <section className="flex justify-center bg-primary-50 bg-dotted-pattern bg-contain">
+    <div className='bg-gray-900'>
+    <section className="flex justify-center bg-gray-900 bg-dotted-pattern bg-contain">
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
         <Image 
           src={event.imageUrl}
@@ -30,7 +30,7 @@ const event = await getEventById(id);
 
         <div className="flex w-full flex-col gap-8 p-5 md:p-10">
           <div className="flex flex-col gap-6">
-            <h2 className='h2-bold'>{event.title}</h2>
+            <h2 className='text-white h2-bold'>{event.title}</h2>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <div className="flex gap-3">
@@ -42,9 +42,9 @@ const event = await getEventById(id);
                 </p>
               </div>
 
-              <p className="p-medium-18 ml-2 mt-2 sm:mt-0">
+              <p className="text-white p-medium-18 ml-2 mt-2 sm:mt-0">
                 by{' '}
-                <span className="text-primary-500">{event.organizer.firstName} {event.organizer.lastName}</span>
+                <span className="text-primary-500 ">{event.organizer.firstName} {event.organizer.lastName}</span>
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const event = await getEventById(id);
           <div className="flex flex-col gap-5">
             <div className='flex gap-2 md:gap-3'>
               <Image src="/assets/icons/calendar.svg" alt="calendar" width={32} height={32} />
-              <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center">
+              <div className="p-medium-16 lg:p-regular-20 text-white flex flex-wrap items-center">
                 <p>
                   {formatDateTime(event.startDateTime).dateOnly} - {' '}
                   {formatDateTime(event.startDateTime).timeOnly}
@@ -68,13 +68,13 @@ const event = await getEventById(id);
 
             <div className="p-regular-20 flex items-center gap-3">
               <Image src="/assets/icons/location.svg" alt="location" width={32} height={32} />
-              <p className="p-medium-16 lg:p-regular-20">{event.location}</p>
+              <p className=" text-white p-medium-16 lg:p-regular-20">{event.location}</p>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
             <p className="p-bold-20 text-grey-600">What You'll Learn:</p>
-            <p className="p-medium-16 lg:p-regular-18">{event.description}</p>
+            <p className="p-medium-16 lg:p-regular-18 text-white">{event.description}</p>
             <p className="p-medium-16 lg:p-regular-18 truncate text-primary-500 underline">{event.url}</p>
           </div>
         </div>
@@ -82,8 +82,8 @@ const event = await getEventById(id);
     </section>
 
     {/* EVENTS with the same category */}
-    <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
-      <h2 className="h2-bold">Related Events</h2>
+    <section className="bg-gray-900 wrapper my-8 flex flex-col gap-8 md:gap-12">
+      <h2 className=" text-white h2-bold">Related Events</h2>
 
       <Collection 
           data={relatedEvents?.data}
@@ -95,7 +95,7 @@ const event = await getEventById(id);
           totalPages={relatedEvents?.totalPages}
         />
     </section>
-    </>
+    </div>
   )
 }
 

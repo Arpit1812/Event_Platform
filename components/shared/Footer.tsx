@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="flex flex-col sm:w-1/4 gap-4 text-center sm:text-left">
             <h4 className="text-lg font-semibold text-gray-300">Quick Links</h4>
-            <Link href="/about" className="text-gray-400 hover:text-primary-500 text-sm">
+            <Link href="/aboutus" className="text-gray-400 hover:text-primary-500 text-sm">
               About Us
             </Link>
             <Link href="/events" className="text-gray-400 hover:text-primary-500 text-sm">
@@ -32,7 +32,7 @@ const Footer = () => {
             <Link href="/gallery" className="text-gray-400 hover:text-primary-500 text-sm">
               Gallery
             </Link>
-            <Link href="/contact" className="text-gray-400 hover:text-primary-500 text-sm">
+            <Link href="/contactus" className="text-gray-400 hover:text-primary-500 text-sm">
               Contact Us
             </Link>
           </div>
