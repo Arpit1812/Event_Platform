@@ -12,7 +12,8 @@ const AboutUs = () => {
         <div
           className="absolute top-0 left-0 w-full h-full animate-gradientAnimation"
           style={{
-            backgroundSize: "400% 400%",
+            backgroundSize: "200% 200%",
+              animation: 'colorTransition 8s infinite',
           }}
         ></div>
 
@@ -112,7 +113,7 @@ const AboutUs = () => {
         }
 
         .animate-gradientAnimation {
-          animation: gradientAnimation 3s ease infinite;
+          animation: gradientAnimation 8s ease infinite;
         }
       `}</style>
     </div>
