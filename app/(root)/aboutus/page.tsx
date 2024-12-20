@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div>
       {/* Hero Section with Animated Stripe */}
-      <section className="relative w-full h-[80vh] flex justify-center items-center overflow-hidden">
+      <section className="relative w-full h-[45vh] flex justify-center items-center overflow-hidden">
         {/* Animated Background */}
         <div
           className="absolute top-0 left-0 w-full h-full animate-gradientAnimation"
@@ -19,7 +19,7 @@ const AboutUs = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">About Evently</h1>
+          <h1 className="text-4xl font-bold mb-4">About Evently</h1>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
             Crafting unforgettable experiences with passion, innovation, and a commitment to excellence.
           </p>
@@ -113,7 +113,7 @@ const AboutUs = () => {
         }
 
         .animate-gradientAnimation {
-          animation: gradientAnimation 8s ease infinite;
+          animation: gradientAnimation 4s ease infinite;
         }
       `}</style>
     </div>
