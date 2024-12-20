@@ -277,7 +277,7 @@ body {
 
 #neon-section {
   position: relative;
-  height: 300px; /* Adjust as needed */
+  height: 45vh; /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;

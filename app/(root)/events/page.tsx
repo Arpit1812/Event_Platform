@@ -120,21 +120,24 @@ export default async function Home({ searchParams }: SearchParamProps) {
       
       <section id="events" className="wrapper bg-black my-8 flex flex-col gap-8 md:gap-12">
 
-  <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
-          <div className="flex flex-col justify-center gap-4 text-white">
-          <h2 className="pt-2 text-3xl font-bold text-white text-center">
-    Trusted by <br /> Thousands of Events
-  </h2>
-          </div>
+      <div className="wrapper grid grid-cols-1 gap-4 md:grid-cols-2 2xl:gap-4 max-w-[90%] mx-auto">
+  <div className="flex flex-col justify-center gap-3 text-white">
+    <h2 className="text-4xl font-bold text-white text-center leading-tight">
+      Trusted by <br /> Thousands of Events
+    </h2>
+  </div>
 
-          <Image
-            src="/assets/images/Home-photo-collage2.png"
-            alt="hero"
-            width={450}
-            height={100}
-            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
-          />
-        </div>
+  <div className="flex justify-center items-center">
+    <Image
+      src="/assets/images/Home-photo-collage2.png"
+      alt="hero"
+      width={300}
+      height={100}
+      className="object-contain object-center"
+    />
+  </div>
+</div>
+
 
   {/* Search and Filter Section */}
   <div className="flex w-full flex-col gap-5 md:flex-row">
