@@ -154,7 +154,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
     limit={8} // Adjusted limit
     page={page}
     totalPages={events?.totalPages}
-    gridClass="grid grid-cols-1 gap-5 md:grid-cols-4"
+    // gridClass="grid grid-cols-1 gap-5 md:grid-cols-4"
   />
 </section>
 

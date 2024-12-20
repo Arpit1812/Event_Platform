@@ -19,7 +19,7 @@ const AboutUs = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl font-bold mb-4">About Evently</h1>
+          <h1 className="text-4xl font-bold mb-4">About Spotlight Shows</h1>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
             Crafting unforgettable experiences with passion, innovation, and a commitment to excellence.
           </p>
@@ -40,7 +40,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/images/who-we-are.jpg"
+              src="/assets/images/download.jpg"
               alt="Who We Are"
               width={800}
               height={600}
@@ -68,7 +68,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/images/our-mission.jpg"
+              src="/assets/images/our mission.jpg"
               alt="Our Mission"
               width={800}
               height={600}
@@ -88,7 +88,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/images/our-vision.jpg"
+              src="/assets/images/our vision.jpg"
               alt="Our Vision"
               width={800}
               height={600}

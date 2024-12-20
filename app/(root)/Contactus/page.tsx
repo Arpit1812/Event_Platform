@@ -45,7 +45,7 @@ const ContactUs = () => {
       <section
         className="relative h-[50vh] flex items-center justify-center"
         style={{
-          backgroundImage: 'url(/assets/images/contact-hero.jpg)',
+          backgroundImage: '/assets/images/contact-us.jpg',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
