@@ -4,7 +4,7 @@
  export default authMiddleware({
   publicRoutes: [
   '/',
-  //'/events/:id',
+  '/events/:id',
   '/contactus',
   '/aboutus',
   '/events',
