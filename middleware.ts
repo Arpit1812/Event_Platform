@@ -5,6 +5,8 @@
   publicRoutes: [
   '/',
   //'/events/:id',
+  '/contactus',
+  '/aboutus',
   '/events',
   '/api/webhook/clerk',
   '/api/webhook/stripe',
