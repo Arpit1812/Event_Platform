@@ -117,53 +117,44 @@ export default async function Home({ searchParams }: SearchParamProps) {
         <h1 className="text-4xl font-bold">~ Events</h1>
       </section>
 
-      <section className="bg-black py-5 md:py-10">
-        <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
-          <div className="flex flex-col justify-center gap-8 text-white">
-            <h1 className="text-4xl font-bold">
-              Host, Connect, Celebrate: Your Events, Our Platform!
-            </h1>
-            <p className="text-lg">
-              Book and learn helpful tips from 3,168+ mentors in world-class
-              companies with our global community.
-            </p>
-            <Button size="lg" asChild className="button w-full sm:w-fit">
-              <Link href="#events">Explore Now</Link>
-            </Button>
+      
+      <section id="events" className="wrapper bg-black my-8 flex flex-col gap-8 md:gap-12">
+
+  <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
+          <div className="flex flex-col justify-center gap-4 text-white">
+          <h2 className="pt-2 text-3xl font-bold text-white text-center">
+    Trusted by <br /> Thousands of Events
+  </h2>
           </div>
 
           <Image
-            src="/assets/images/hero.png"
+            src="/assets/images/Home-photo-collage2.png"
             alt="hero"
-            width={1000}
-            height={1000}
+            width={450}
+            height={100}
             className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
           />
         </div>
-      </section>
 
-      <section id="events" className="wrapper bg-black my-8 flex flex-col gap-8 md:gap-12">
-      <h2 className="border-t border-white border-opacity-40 pt-4 text-3xl font-bold text-white">
-  Trusted by <br /> Thousands of Events
-</h2>
+  {/* Search and Filter Section */}
+  <div className="flex w-full flex-col gap-5 md:flex-row">
+    <Search />
+    <CategoryFilter />
+  </div>
 
+  {/* Collection Section */}
+  <Collection
+    data={events?.data}
+    emptyTitle="No Events Found"
+    emptyStateSubtext="Come back later"
+    collectionType="All_Events"
+    limit={8} // Adjusted limit
+    page={page}
+    totalPages={events?.totalPages}
+    gridClass="grid grid-cols-1 gap-5 md:grid-cols-4"
+  />
+</section>
 
-        <div className="flex w-full flex-col gap-5 md:flex-row">
-          <Search />
-          <CategoryFilter />
-        </div>
-
-        <Collection
-          data={events?.data}
-          emptyTitle="No Events Found"
-          emptyStateSubtext="Come back later"
-          collectionType="All_Events"
-          limit={8} // Adjusted limit
-          page={page}
-          totalPages={events?.totalPages}
-          gridClass="grid grid-cols-1 gap-5 md:grid-cols-4"
-        />
-      </section>
     </div>
   );
 }
