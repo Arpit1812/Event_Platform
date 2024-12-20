@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "black", color: "white" }}>
       {/* Hero Section with Animated Stripe */}
       <section className="relative w-full h-[45vh] flex justify-center items-center overflow-hidden">
         {/* Animated Background */}
@@ -13,7 +13,7 @@ const AboutUs = () => {
           className="absolute top-0 left-0 w-full h-full animate-gradientAnimation"
           style={{
             backgroundSize: "200% 200%",
-              animation: 'colorTransition 8s infinite',
+            animation: "colorTransition 8s infinite",
           }}
         ></div>
 
@@ -32,8 +32,10 @@ const AboutUs = () => {
         <div style={{ display: "flex", gap: "40px", alignItems: "center", marginBottom: "80px" }}>
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Who We Are</h2>
-            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "#333" }}>
-              At Evently, we blend creativity with technology to bring your ideas to life. With a rich history of delivering top-notch entertainment solutions, we pride ourselves on our ability to connect with audiences in meaningful ways.
+            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
+              At Spotlight Shows, we blend creativity with technology to bring your ideas to life. With a rich history
+              of delivering top-notch entertainment solutions, we pride ourselves on our ability to connect with
+              audiences in meaningful ways.
             </p>
           </div>
           <div style={{ flex: 1 }}>
@@ -59,8 +61,9 @@ const AboutUs = () => {
         >
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Our Mission</h2>
-            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "#333" }}>
-              Our mission is to create exceptional experiences that leave lasting impressions. By leveraging cutting-edge technology and innovative strategies, we aim to redefine the entertainment landscape.
+            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
+              Our mission is to create exceptional experiences that leave lasting impressions. By leveraging
+              cutting-edge technology and innovative strategies, we aim to redefine the entertainment landscape.
             </p>
           </div>
           <div style={{ flex: 1 }}>
@@ -78,7 +81,7 @@ const AboutUs = () => {
         <div style={{ display: "flex", gap: "40px", alignItems: "center", marginBottom: "80px" }}>
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Our Vision</h2>
-            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "#333" }}>
+            <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
               Our vision is to be the global leader in entertainment, inspiring creativity and bringing people together
               through unforgettable experiences. We strive to push boundaries and set new standards in the industry.
             </p>
