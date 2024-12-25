@@ -7,15 +7,15 @@ export default function HeroImageSlider() {
   const images = [
     '/assets/images/a.jpeg',
     '/assets/images/b.jpeg',
-    '/assets/images/d.jpeg',
-    '/assets/images/e.jpeg',
-    '/assets/images/f.jpeg',
+    '/assets/images/d.jpg',
+    '/assets/images/e.jpg',
+    '/assets/images/f.jpg',
     '/assets/images/g.jpeg',
     '/assets/images/h.jpeg',
     '/assets/images/i.jpeg',
     '/assets/images/k.jpeg',
     '/assets/images/j.jpeg',
-    '/assets/images/l.jpeg',
+    '/assets/images/l.jpg',
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
