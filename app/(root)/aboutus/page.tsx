@@ -33,9 +33,12 @@ const AboutUs = () => {
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Who We Are</h2>
             <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
-              At Spotlight Shows, we blend creativity with technology to bring your ideas to life. With a rich history
-              of delivering top-notch entertainment solutions, we pride ourselves on our ability to connect with
-              audiences in meaningful ways.
+            At Spotlight Shows, we are not just another event organizer. 
+            We are curators of unforgettable experiences, specializing in stand-up comedy and live singing shows. 
+            We bring together diverse talent—local rising stars and renowned international artists—to create platforms where creativity thrives and audiences connect. 
+            What sets us apart is our passion for building an ecosystem that values the artist as much as the art.
+
+
             </p>
           </div>
           <div style={{ flex: 1 }}>
@@ -62,8 +65,10 @@ const AboutUs = () => {
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Our Mission</h2>
             <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
-              Our mission is to create exceptional experiences that leave lasting impressions. By leveraging
-              cutting-edge technology and innovative strategies, we aim to redefine the entertainment landscape.
+            Our mission is to revolutionize the entertainment industry by creating opportunities where artists are celebrated and audiences are inspired. 
+            We aim to break boundaries, elevate performances, and provide an unmatched stage for talent to shine. 
+            We aren’t just hosting shows; we are building bridges between creativity, culture, and community.
+
             </p>
           </div>
           <div style={{ flex: 1 }}>
@@ -82,8 +87,8 @@ const AboutUs = () => {
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: "3rem", fontWeight: "bold", marginBottom: "20px" }}>Our Vision</h2>
             <p style={{ lineHeight: "1.8", fontSize: "1.2rem", color: "lightgray" }}>
-              Our vision is to be the global leader in entertainment, inspiring creativity and bringing people together
-              through unforgettable experiences. We strive to push boundaries and set new standards in the industry.
+            To become the go-to platform for artists and audiences alike, fostering a global network of talent, creativity, and collaboration. 
+            We envision a world where every performer feels empowered, every audience feels enthralled, and every event becomes a story worth sharing.
             </p>
           </div>
           <div style={{ flex: 1 }}>

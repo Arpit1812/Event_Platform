@@ -149,14 +149,13 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <section className="bg-black bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8 text-white">
-            <h1 className="h1-bold">Host, Connect, Celebrate: Your Events, Our Platform!</h1>
-            <p className="p-regular-20 md:p-regular-24">Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.</p>
-            <button className="bg-blue-500 text-white w-full sm:w-fit py-4 px-7 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-            <Link href="#events">Explore Now</Link>
-            </button >
-
-
-        </div>
+            <h1 className="h1-bold">Where Talent Meets the Spotlight!</h1>
+            <p className="p-regular-20 md:p-regular-24">At Spotlight Shows, we create unforgettable moments by hosting extraordinary stand-up comedy and live singing events. From local gems to global sensations, we provide a stage for talent to shine and audiences to be captivated. 
+              Unlike others, we’re not just organizers—we're passionate storytellers, curating every show to celebrate artistry and connection.</p>
+            <button className="button w-full sm:w-fit">
+              <Link href="#events">Explore Now</Link>
+            </button>
+          </div>
 
           {/* Hero Image Slider Component */}
           <HeroImageSlider />
