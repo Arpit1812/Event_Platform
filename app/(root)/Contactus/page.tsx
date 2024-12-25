@@ -39,18 +39,7 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/assets/images/Home-photo-collage2.png')" }}>
       {/* Hero Section */}
-<<<<<<< HEAD
-      <section
-        className="relative h-[50vh] flex items-center justify-center"
-        style={{
-          backgroundImage: '/assets/images/contact-us.jpg',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-=======
       <section className="relative h-[50vh] flex items-center justify-center">
->>>>>>> adebb1be2b8ea83364f73007d09cc43174ab503e
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <h1 className="relative text-5xl font-bold text-white">Contact Us</h1>
       </section>

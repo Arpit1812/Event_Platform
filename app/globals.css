@@ -74,7 +74,8 @@
 }
 
 body {
-  font-family: var(--font-poppins)
+  font-family: var(--font-poppins);
+  background-color: black
 }
 
 .filter-grey {
