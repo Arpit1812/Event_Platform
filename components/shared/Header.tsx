@@ -53,7 +53,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="w-full border-b py-2"> {/* Reduced padding */}
+    <header className="w-full bg-white border-b py-2"> {/* Reduced padding */}
       <div className="wrapper flex items-center justify-between h-12"> {/* Reduced height */}
         {/* Adjusted logo size */}
         <Link href="/" className="w-28 flex-shrink-0">
