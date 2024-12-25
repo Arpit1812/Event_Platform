@@ -5,14 +5,17 @@ import { useState, useEffect } from 'react';
 
 export default function HeroImageSlider() {
   const images = [
-    '/assets/images/1.jpg',
-    '/assets/images/2.jpg',
-    '/assets/images/3.jpg',
-    '/assets/images/4.jpg',
-    '/assets/images/5.jpg',
-    '/assets/images/6.jpg',
-    '/assets/images/7.jpg',
-    '/assets/images/4.jpg',
+    '/assets/images/a.jpeg',
+    '/assets/images/b.jpeg',
+    '/assets/images/d.jpeg',
+    '/assets/images/e.jpeg',
+    '/assets/images/f.jpeg',
+    '/assets/images/g.jpeg',
+    '/assets/images/h.jpeg',
+    '/assets/images/i.jpeg',
+    '/assets/images/k.jpeg',
+    '/assets/images/j.jpeg',
+    '/assets/images/l.jpeg',
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

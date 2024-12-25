@@ -43,7 +43,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/assets/images/download.jpg"
+              src="/assets/images/who-we-are.jpeg"
               alt="Who We Are"
               width={800}
               height={600}
@@ -73,7 +73,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/assets/images/our mission.jpg"
+              src="/assets/images/c.jpeg"
               alt="Our Mission"
               width={800}
               height={600}
@@ -93,7 +93,7 @@ const AboutUs = () => {
           </div>
           <div style={{ flex: 1 }}>
             <Image
-              src="/assets/images/our vision.jpg"
+              src="/assets/images/our-vision.jpeg"
               alt="Our Vision"
               width={800}
               height={600}
