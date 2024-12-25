@@ -149,10 +149,13 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <section className="bg-black bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8 text-white">
-            <h1 className="h1-bold">Where Talent Meets the Spotlight!</h1>
-            <p className="p-regular-20 md:p-regular-24">At Spotlight Shows, we create unforgettable moments by hosting extraordinary stand-up comedy and live singing events. From local gems to global sensations, we provide a stage for talent to shine and audiences to be captivated. 
-              Unlike others, we’re not just organizers—we're passionate storytellers, curating every show to celebrate artistry and connection.</p>
-            <button className="button w-full sm:w-fit">
+          <h1 className="h1-bold" style={{ fontSize: "3rem" }}>Where Talent Meets the Spotlight!</h1>
+            <p className="p-regular-10 h6 md:p-regular-24" style={{ fontSize: "1.3rem", fontWeight: "normal" }}>
+              At Spotlight Shows, we create unforgettable moments by hosting extraordinary stand-up comedy and live singing events. 
+              From local gems to global sensations, we provide a stage for talent to shine and audiences to be captivated. 
+              Unlike others, we’re not just organizers—we're passionate storytellers, curating every show to celebrate artistry and connection.
+            </p>
+              <button className="button w-full sm:w-fit m-3 p-4 bg-blue-700">
               <Link href="#events">Explore Now</Link>
             </button>
           </div>
