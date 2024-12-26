@@ -128,9 +128,9 @@ const Header = () => {
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
           <SignedOut>
-            <Button asChild className="rounded-full" size="lg">
+            {/* <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">Login</Link>
-            </Button>
+            </Button> */}
           </SignedOut>
         </div>
       </div>
