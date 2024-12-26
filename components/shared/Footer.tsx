@@ -51,9 +51,11 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="flex flex-col sm:w-1/4 gap-4 text-center sm:text-left">
             <h4 className="text-lg font-semibold text-gray-300">Contact Information</h4>
-            <p className="text-gray-400 text-sm">211, Station Road, HA1 2TP, Harrow, UK</p>
-            <p className="text-gray-400 text-sm">contact@zeppelinentertainment.com</p>
-            <p className="text-gray-400 text-sm">+44 7443821901</p>
+            <p className="text-gray-400 text-sm">47 Squires Croft Sutton Coldfield B76 2RY United Kingdom</p>
+            <p className="text-gray-400 text-sm">Info@spotlightshows.co.uk</p>
+            <p className="text-gray-400 text-sm">+44 78142 52673
+            +44 7805 248172
+            </p>
           </div>
         </div>
 
@@ -93,7 +95,15 @@ const Footer = () => {
           {/* Copyright and Developer Info */}
           <p className="text-sm text-gray-500 text-center mt-6">
             &copy; 2024 Spotlight Shows. All Rights Reserved. <br />
-            Designed & Developed with ❤️ by Worthever Multimedia
+            Designed & Developed with ❤️ by 
+            <a
+              href="https://linktr.ee/DWS_ArpitDogra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-500 hover:underline ml-1"
+            >
+              DWS
+            </a>
           </p>
         </div>
       </div>

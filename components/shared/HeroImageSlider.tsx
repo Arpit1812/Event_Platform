@@ -22,7 +22,7 @@ export default function HeroImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 600); // 8 seconds
+    }, 8000); // 8 seconds
     return () => clearInterval(interval);
   }, []);
 
