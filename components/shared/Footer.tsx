@@ -29,15 +29,15 @@ const Footer = () => {
             <Link href="/events" className="text-gray-400 hover:text-primary-500 text-sm">
               Events
             </Link>
-            <Link href="/gallery" className="text-gray-400 hover:text-primary-500 text-sm">
+            {/* <Link href="/gallery" className="text-gray-400 hover:text-primary-500 text-sm">
               Gallery
-            </Link>
+            </Link> */}
             <Link href="/Contactus" className="text-gray-400 hover:text-primary-500 text-sm">
               Contact Us
             </Link>
           </div>
 
-          {/* Important Links */}
+          {/* Important Links
           <div className="flex flex-col sm:w-1/4 gap-4 text-center sm:text-left">
             <h4 className="text-lg font-semibold text-gray-300">Important Links</h4>
             <Link href="/faq" className="text-gray-400 hover:text-primary-500 text-sm">
@@ -46,7 +46,7 @@ const Footer = () => {
             <Link href="/terms" className="text-gray-400 hover:text-primary-500 text-sm">
               Terms & Conditions
             </Link>
-          </div>
+          </div> */}
 
           {/* Contact Information */}
           <div className="flex flex-col sm:w-1/4 gap-4 text-center sm:text-left">

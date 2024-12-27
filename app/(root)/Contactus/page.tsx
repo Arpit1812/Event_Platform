@@ -79,7 +79,7 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Form Section */}
+      {/* Form Section
       <div className="py-12 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
@@ -87,16 +87,41 @@ const ContactUs = () => {
             <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
               Whether you’re curious about our services, have questions, or just want to say hi, drop us a line.
             </p>
-          </div>
+            <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
+        Form coming soon
+      </p>
+          </div> */}
+          {/* Form Section */}
+<div className="py-12 relative">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="lg:text-center">
+      <h2 className="text-3xl font-semibold text-white">We’d Love to Hear From You</h2>
+      <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
+              Whether you’re curious about our services, have questions, or just want to say hi, drop us a line.
+            </p>
+      {/* <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
+        Form coming soon
+      </p> */}
+      <div className="py-12 relative">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="lg:text-center bg-white shadow-lg rounded-lg p-8">
+      <h2 className="text-3xl font-semibold text-black font-serif">Form Coming Soon.....</h2>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
 
-          <div className="mt-10">
+
+          {/* <div className="mt-10">
             <div className="bg-white shadow-lg sm:rounded-lg overflow-hidden">
               <div className="px-6 py-8 sm:px-10 lg:px-12">
                 <h3 className="text-2xl font-medium text-gray-900 mb-6">Contact Us</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     {/* Input Fields */}
-                    <div>
+                    {/* <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                         Full Name
                       </label>
@@ -170,11 +195,11 @@ const ContactUs = () => {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */} 
           </div>
-        </div>
-      </div>
-    </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
