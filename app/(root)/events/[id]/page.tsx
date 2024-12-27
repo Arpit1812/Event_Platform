@@ -23,9 +23,9 @@ const event = await getEventById(id);
         <Image 
           src={event.imageUrl}
           alt="hero image"
-          width={1000}
-          height={1000}
-          className="h-full min-h-[300px] object-contain object-center"
+          width={300}
+          height={200}
+          className="w-full h-auto max-h-[300px] md:max-h-[500px] object-contain"
         />
 
         <div className="flex w-full flex-col gap-8 p-5 md:p-10">
