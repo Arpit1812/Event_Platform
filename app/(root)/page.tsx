@@ -170,7 +170,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
         <div className="flex w-full flex-col gap-5 md:flex-row">
           <Search />
-          <CategoryFilter />
+          {/* <CategoryFilter /> */}
         </div>
 
         {/* Pass events data to Collection */}

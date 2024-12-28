@@ -1,3 +1,4 @@
+import { Heading1 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -95,14 +96,14 @@ const Footer = () => {
           {/* Copyright and Developer Info */}
           <p className="text-sm text-gray-500 text-center mt-6">
             &copy; 2024 Spotlight Shows. All Rights Reserved. <br />
-            Designed & Developed with ❤️ by 
+            Designed & Developed with by 
             <a
               href="https://linktr.ee/DWS_ArpitDogra"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-500 hover:underline ml-1"
             >
-              DWS
+             <span className="text-lg font-bold">DWS</span>
             </a>
           </p>
         </div>
