@@ -17,11 +17,9 @@ const ContactUs = () => {
     name: "",
     email: "",
     phone: "",
-    interests: "",
-    skills: "",
-    availability: "",
     comments: "",
   });
+  const [submissionStatus, setSubmissionStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -32,8 +30,31 @@ const ContactUs = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
-    // You can uncomment and modify the fetch logic here for form submission
+
+    try {
+      const response = await fetch("https://formspree.io/f/xeoolryd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmissionStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          comments: "",
+        });
+      } else {
+        setSubmissionStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmissionStatus("error");
+    }
   };
 
   return (
@@ -79,19 +100,6 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Form Section
-      <div className="py-12 relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
-            <h2 className="text-3xl font-semibold text-white">We’d Love to Hear From You</h2>
-            <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
-              Whether you’re curious about our services, have questions, or just want to say hi, drop us a line.
-            </p>
-            <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
-        Form coming soon
-      </p>
-          </div> */}
-          {/* Form Section */}
 <div className="py-12 relative">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="lg:text-center">
@@ -99,29 +107,17 @@ const ContactUs = () => {
       <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
               Whether you’re curious about our services, have questions, or just want to say hi, drop us a line.
             </p>
-      {/* <p className="mt-4 max-w-2xl text-lg text-gray-200 lg:mx-auto">
-        Form coming soon
-      </p> */}
-      <div className="py-12 relative">
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="lg:text-center bg-white shadow-lg rounded-lg p-8">
-      <h2 className="text-3xl font-semibold text-black font-serif">Form Coming Soon.....</h2>
     </div>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
 
 
-          {/* <div className="mt-10">
+          <div className="mt-10">
             <div className="bg-white shadow-lg sm:rounded-lg overflow-hidden">
               <div className="px-6 py-8 sm:px-10 lg:px-12">
                 <h3 className="text-2xl font-medium text-gray-900 mb-6">Contact Us</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                    {/* Input Fields */}
-                    {/* <div>
+                     {/* Input Fields */}
+                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                         Full Name
                       </label>
@@ -131,7 +127,7 @@ const ContactUs = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-red-500 focus:ring-red-500 sm:text-sm"
+                        className="mt-1 block w-full bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:border-red-500 focus:ring-red-500 h-8 sm:text-sm"
                         placeholder="John Doe"
                         required
                       />
@@ -153,7 +149,7 @@ const ContactUs = () => {
                     />
                     <div className="flex items-center space-x-3">
                       <FaEnvelope className="text-gray-500" />
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Emails</label>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Email</label>
                     </div>
                     <input
                       type="tel"
@@ -193,13 +189,19 @@ const ContactUs = () => {
                       Submit
                     </button>
                   </div>
+                  {submissionStatus === "success" && (
+              <p className="mt-4 text-green-600">Thank you! Your message has been sent successfully.</p>
+            )}
+            {submissionStatus === "error" && (
+              <p className="mt-4 text-red-600">Oops! Something went wrong. Please try again later.</p>
+            )}
                 </form>
               </div>
-            </div> */} 
+            </div>
           </div>
-    //     </div>
-    //   </div>
-    // </div>
+        </div>
+       </div>
+     </div>
   );
 };
 
