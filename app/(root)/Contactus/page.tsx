@@ -118,16 +118,14 @@ const ContactUs = () => {
                   <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                      {/* Input Fields */}
                      <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                        Full Name
-                      </label>
+                      
                       <input
                         type="text"
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="mt-1 block w-full bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:border-red-500 focus:ring-red-500 h-8 sm:text-sm"
+                        className="mt-1 block w-full border bg-gray-100 border-gray-300 rounded-md shadow-sm focus:border-red-500 focus:ring-red-500 h-8 sm:text-sm"
                         placeholder="John Doe"
                         required
                       />
@@ -138,10 +136,10 @@ const ContactUs = () => {
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
                     </div>
                     <input
-                      type="name"
-                      id="name"
-                      name="name"
-                      value={formData.name}
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
                       onChange={handleChange}
                       className="mt-1 block w-full bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:border-red-500 focus:ring focus:ring-red-500 focus:ring-opacity-50 sm:text-sm h-12 pl-4" // Added padding-left
                       placeholder="example@example.com"
@@ -149,7 +147,7 @@ const ContactUs = () => {
                     />
                     <div className="flex items-center space-x-3">
                       <FaEnvelope className="text-gray-500" />
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Email</label>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Emails</label>
                     </div>
                     <input
                       type="tel"
