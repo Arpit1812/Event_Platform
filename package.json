@@ -27,11 +27,7 @@
     "lucide-react": "^0.294.0",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
-<<<<<<< HEAD
-    "next": "^14.2.18",
-=======
     "next": "^14.0.4",
->>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
     "query-string": "^8.1.0",
     "react": "^18.3.1",
     "react-datepicker": "^4.24.0",
