@@ -6,10 +6,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'utfs.io',
-        port: ''
+        // Remove the port field if not required
       }
     ]
-  }
-}
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

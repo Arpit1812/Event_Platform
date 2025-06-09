@@ -23,20 +23,28 @@
     "@uploadthing/react": "^6.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "framer-motion": "^11.14.1",
     "lucide-react": "^0.294.0",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
+<<<<<<< HEAD
     "next": "^14.2.18",
+=======
+    "next": "^14.0.4",
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
     "query-string": "^8.1.0",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-datepicker": "^4.24.0",
-    "react-dom": "^18",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.49.0",
+    "react-icons": "^5.4.0",
+    "sharp": "^0.33.5",
     "stripe": "^14.8.0",
     "svix": "^1.15.0",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.0.4",
+    "yarn": "^1.22.22",
     "zod": "^3.22.4"
   },
   "devDependencies": {

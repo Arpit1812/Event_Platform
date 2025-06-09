@@ -1,17 +1,42 @@
 <div align="center">
   <br />
+<<<<<<< HEAD
     <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
       <img src="https://github.com/adrianhajdin/event_platform/assets/151519281/548975af-f0ed-4103-8834-fe93cf91862e" alt="Project Banner">
+=======
+<<<<<<< HEAD
+    <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
+      <img src="https://github.com/adrianhajdin/event_platform/assets/151519281/548975af-f0ed-4103-8834-fe93cf91862e" alt="Project Banner">
+=======
+    <a href="https://www.youtube.com/watch?v=FkowOdMjvYo" target="_blank">
+      <img src="https://github.com/sujatagunale/EasyRead/assets/151519281/65ff8e7a-9167-4761-bb89-59b6b3ba8307" alt="Project Banner">
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
     </a>
   <br />
 
   <div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
     <img src="https://img.shields.io/badge/-Next_JS_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
     <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=008CDD" alt="stripe" />
   </div>
 
   <h3 align="center">A Full Stack Next 14 Events App</h3>
+<<<<<<< HEAD
+=======
+=======
+    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  </div>
+
+  <h3 align="center">A 3D Dev Portfolio</h3>
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 
    <div align="center">
      Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
@@ -34,11 +59,25 @@ This repository contains the code corresponding to an in-depth tutorial availabl
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 <a href="https://youtu.be/zgGhzuBZOQg" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
 Built on Next.js 14, the events application stands as a comprehensive, full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally. Featuring seamless payment processing through Stripe, you have the capability to purchase tickets for any event or even initiate and manage your own events.
+<<<<<<< HEAD
+=======
+=======
+<a href="https://www.youtube.com/watch?v=FkowOdMjvYo" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+
+## <a name="introduction">🤖 Introduction</a>
+
+Built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS, 3D Island is a website project. The primary goal is to demonstrate the developer's skills in a unique manner that creates a lasting impact.
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
 
@@ -47,6 +86,10 @@ If you're getting started and need assistance or face any bugs, join our active 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Node.js
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 - Next.js
 - TypeScript
 - TailwindCSS
@@ -79,6 +122,44 @@ If you're getting started and need assistance or face any bugs, join our active 
 👉 **Event Orders:** Comprehensive order management system, providing a clear overview of all event-related transactions.
     
 👉 **Search Orders:** Quick and efficient search functionality for orders, facilitating easy tracking and management.
+<<<<<<< HEAD
+=======
+=======
+- React.js
+- Three.js
+- React Three Fiber
+- React Three Drei
+- Email JS
+- Vite
+- Tailwind CSS
+
+## <a name="features">🔋 Features</a>
+
+👉 **Engaging 3D Floating Fox Island**: Rotate and explore using drag-and-drop or arrow keys.
+
+👉 **Dynamic Sky Movement**: Sky adapts to Island motion, enhancing the immersive experience.
+
+👉 **Soaring 3D Bird**: Responds dynamically to camera positions, adding a lively touch.
+
+👉 **Informative Island Sections**: Each island part shares details about the individual.
+
+👉 **Comprehensive About Page**: Dive into detailed information, skills, and education.
+
+👉 **Project Showcase**: Explore a curated list of projects created by the individual.
+
+👉 **Contact Page with EmailJS Integration**: Easily send emails directly from the contact form.
+
+👉 **Interactive Fox on Contact Page**: A playful fox reacts to user interactions with the form.
+
+👉 **Seamless Animations**: Enjoy fluid and captivating visual transitions.
+
+👉 **Lofi Music Integration**: Delight in smooth music that adapts to user interactions.
+
+👉 **Responsive Design**: Optimized for a seamless experience across all devices.
+
+👉 **Aesthetic Glassmorphism and Neobrutalism Effects**: Elevate the visual appeal with modern design trends.
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 
 and many more, including code architecture and reusability 
 
@@ -140,7 +221,15 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 ```
 
+<<<<<<< HEAD
 Replace the placeholder values with your actual credentials 
+=======
+<<<<<<< HEAD
+Replace the placeholder values with your actual credentials 
+=======
+Replace the placeholder values with your actual EmailJS credentials. You can obtain these credentials by signing up on the [EmailJS website](https://www.emailjs.com/).
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 
 **Running the Project**
 
@@ -153,13 +242,31 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ## <a name="snippets">🕸️ Snippets</a>
 
 <details>
+<<<<<<< HEAD
 <summary><code>globals.css</code></summary>
 
 ```css
+=======
+<<<<<<< HEAD
+<summary><code>globals.css</code></summary>
+
+```css
+=======
+<summary><code>index.css</code></summary>
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -431,11 +538,225 @@ body {
 
 .react-datepicker__time-list-item--selected {
   background-color: #624cf5 !important;
+<<<<<<< HEAD
+=======
+=======
+:root {
+  --blue-rgb: 237 245 255;
+  --green-rgb: 125 161 35;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+body:has(.card[data-color="blue"]:hover) {
+  background-color: rgb(var(--blue-rgb) / 25%);
+}
+
+body:has(.card[data-color="green"]:hover) {
+  background-color: rgb(var(--green-rgb) / 25%);
+}
+
+/* ========================================== TAILWIND STYLES */
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  /* TYPOGRAPHY */
+  /* 64 */
+  .h1-bold {
+    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
+  }
+
+  /* 40 */
+  .h2-bold {
+    @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  }
+
+  .h2-medium {
+    @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  }
+
+  /* 36 */
+  .h3-bold {
+    @apply font-bold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+  }
+
+  .h3-medium {
+    @apply font-medium text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+  }
+
+  /* 32 */
+  .h4-medium {
+    @apply font-medium text-[32px] leading-[40px];
+  }
+
+  /* 28 */
+  .h5-bold {
+    @apply font-bold text-[28px] leading-[36px];
+  }
+
+  /* 24 */
+  .p-bold-24 {
+    @apply font-bold text-[24px] leading-[36px];
+  }
+
+  .p-medium-24 {
+    @apply font-medium text-[24px] leading-[36px];
+  }
+
+  .p-regular-24 {
+    @apply font-normal text-[24px] leading-[36px];
+  }
+
+  /* 20 */
+  .p-bold-20 {
+    @apply font-bold text-[20px] leading-[30px] tracking-[2%];
+  }
+
+  .p-semibold-20 {
+    @apply text-[20px] font-semibold leading-[30px] tracking-[2%];
+  }
+
+  .p-medium-20 {
+    @apply text-[20px] font-medium leading-[30px];
+  }
+
+  .p-regular-20 {
+    @apply text-[20px] font-normal leading-[30px] tracking-[2%];
+  }
+
+  /* 18 */
+  .p-semibold-18 {
+    @apply text-[18px] font-semibold leading-[28px] tracking-[2%];
+  }
+
+  .p-medium-18 {
+    @apply text-[18px] font-medium leading-[28px];
+  }
+
+  .p-regular-18 {
+    @apply text-[18px] font-normal leading-[28px] tracking-[2%];
+  }
+
+  /* 16 */
+  .p-bold-16 {
+    @apply text-[16px] font-bold leading-[24px];
+  }
+
+  .p-medium-16 {
+    @apply text-[16px] font-medium leading-[24px];
+  }
+
+  .p-regular-16 {
+    @apply text-[16px] font-normal leading-[24px];
+  }
+
+  /* 14 */
+  .p-semibold-14 {
+    @apply text-[14px] font-semibold leading-[20px];
+  }
+
+  .p-medium-14 {
+    @apply text-[14px] font-medium leading-[20px];
+  }
+
+  .p-regular-14 {
+    @apply text-[14px] font-normal leading-[20px];
+  }
+
+  /* 12 */
+  .p-medium-12 {
+    @apply text-[12px] font-medium leading-[20px];
+  }
+
+  /* SHADCN OVERRIDES */
+  .select-field {
+    @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+  }
+
+  .input-field {
+    @apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+  }
+
+  .textarea {
+    @apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+  }
+
+  .button {
+    @apply rounded-full h-[54px] p-regular-16;
+  }
+
+  .select-item {
+    @apply py-3 cursor-pointer  focus:bg-primary-50;
+  }
+
+  .toggle-switch {
+    @apply bg-gray-300 !important;
+  }
+}
+
+/* ========================================== CLERK STYLES */
+.cl-logoImage {
+  height: 38px;
+}
+
+.cl-userButtonBox {
+  flex-direction: row-reverse;
+}
+
+.cl-userButtonOuterIdentifier {
+  font-size: 16px;
+}
+
+.cl-userButtonPopoverCard {
+  right: 4px !important;
+}
+
+.cl-formButtonPrimary:hover,
+.cl-formButtonPrimary:focus,
+.cl-formButtonPrimary:active {
+  background-color: #705CF7
+}
+
+/* ========================================== REACT-DATEPICKER STYLES */
+.datePicker {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  margin-left: 16px;
+}
+
+.neo-brutalism-white {
+  background: #fff;
+  border: #fff;
+  box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
+    0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 }
 ```
 </details>
 
 <details>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 <summary><code>tailwind.config.ts</code></summary>
 
 ```typescript
@@ -650,11 +971,290 @@ export async function POST(req: Request) {
   }
  
   return new Response('', { status: 200 })
+<<<<<<< HEAD
 }
+=======
+=======
+<summary><code>constants/index.js</code></summary>
+
+```javascript
+import { meta, shopify, starbucks, tesla } from "../assets/images";
+import {
+    car,
+    contact,
+    css,
+    estate,
+    express,
+    git,
+    github,
+    html,
+    javascript,
+    linkedin,
+    mongodb,
+    motion,
+    mui,
+    nextjs,
+    nodejs,
+    pricewise,
+    react,
+    redux,
+    sass,
+    snapgram,
+    summiz,
+    tailwindcss,
+    threads,
+    typescript
+} from "../assets/icons";
+
+export const skills = [
+    {
+        imageUrl: css,
+        name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+    {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
+        imageUrl: motion,
+        name: "Motion",
+        type: "Animation",
+    },
+    {
+        imageUrl: mui,
+        name: "Material-UI",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nextjs,
+        name: "Next.js",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
+    {
+        imageUrl: sass,
+        name: "Sass",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    }
+];
+
+export const experiences = [
+    {
+        title: "React.js Developer",
+        company_name: "Starbucks",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "March 2020 - April 2021",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "React Native Developer",
+        company_name: "Tesla",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Jan 2021 - Feb 2022",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Web Developer",
+        company_name: "Shopify",
+        icon: shopify,
+        iconBg: "#b7e4c7",
+        date: "Jan 2022 - Jan 2023",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Full stack Developer",
+        company_name: "Meta",
+        icon: meta,
+        iconBg: "#a2d2ff",
+        date: "Jan 2023 - Present",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+];
+
+export const socialLinks = [
+    {
+        name: 'Contact',
+        iconUrl: contact,
+        link: '/contact',
+    },
+    {
+        name: 'GitHub',
+        iconUrl: github,
+        link: 'https://github.com/YourGitHubUsername',
+    },
+    {
+        name: 'LinkedIn',
+        iconUrl: linkedin,
+        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+    }
+];
+
+export const projects = [
+    {
+        iconUrl: pricewise,
+        theme: 'btn-back-red',
+        name: 'Amazon Price Tracker',
+        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        link: 'https://github.com/adrianhajdin/pricewise',
+    },
+    {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'Full Stack Threads Clone',
+        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+        link: 'https://github.com/adrianhajdin/threads',
+    },
+    {
+        iconUrl: car,
+        theme: 'btn-back-blue',
+        name: 'Car Finding App',
+        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'Full Stack Instagram Clone',
+        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+        link: 'https://github.com/adrianhajdin/social_media_app',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-black',
+        name: 'Real-Estate Application',
+        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        link: 'https://github.com/adrianhajdin/projects_realestate',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'AI Summarizer Application',
+        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    }
+];
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 ```
 </details>
 
 <details>
+<<<<<<< HEAD
+=======
+<summary><code>tailwind.config.js</code></summary>
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        gray: {
+          200: "#D5DAE1"
+        },
+        black: {
+          DEFAULT: "#000",
+          500: "#1D2235"
+        },
+        blue: {
+          500: "#2b77e7"
+        }
+      },
+      fontFamily: {
+        worksans: ["Work Sans", "sans-serif"],
+        poppins: ['Poppins', "sans-serif"]
+      },
+      boxShadow: {
+        card: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)'
+      }
+    },
+  },
+  plugins: [],
+>>>>>>> 3f7ac82 (Update README.md)
+}
+```
+
+</details>
+
+<details>
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 <summary><code>user.actions.ts</code></summary>
 
 ```typescript
@@ -738,10 +1338,41 @@ export async function deleteUser(clerkId: string) {
   } catch (error) {
     handleError(error)
   }
+<<<<<<< HEAD
+=======
+=======
+<summary>Normalized Rotation Algorithm</summary>
+
+```javascript
+const normalizedRotation =
+  ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+
+// Set the current stage based on the island's orientation
+switch (true) {
+  case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+    setCurrentStage(4);
+    break;
+  case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+    setCurrentStage(3);
+    break;
+  case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+    setCurrentStage(2);
+    break;
+  case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+    setCurrentStage(1);
+    break;
+  default:
+    setCurrentStage(null);
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 }
 ```
 </details>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 <details>
 <summary><code>order.model.ts</code></summary>
   
@@ -1345,6 +1976,14 @@ export default Orders
 ## <a name="links">🔗 Links</a>
 
 All assets used in the project can be found [here](https://drive.google.com/file/d/1hoRwUtTFIiuOXPw-SDYj6wk4hZTMcYmL/view?usp=sharing)
+<<<<<<< HEAD
+=======
+=======
+## <a name="links">🔗 Links</a>
+
+Models and Assets used in the project can be found [here](https://drive.google.com/file/d/1TACDN8qFpi_NW66I4p48R9_MUmx-JT3P/edit)
+>>>>>>> 3f7ac82 (Update README.md)
+>>>>>>> c474a6b22943a2bf76629619713ccba3c2ddff15
 
 ## <a name="more">🚀 More</a>
 

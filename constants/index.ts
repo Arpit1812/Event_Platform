@@ -3,16 +3,35 @@ export const headerLinks = [
     label: 'Home',
     route: '/',
   },
+  {label: 'About Us',
+   route: '/aboutus',
+  },
+  // {label: 'My Profile',
+  //  route: '/profile',
+  // },
   {
-    label: 'Create Event',
-    route: '/events/create',
+    label: 'Events',
+    route: '/events',
+    submenu: [
+      {
+        label: 'Upcoming Events',
+        route: '/events/upcoming',
+      },
+      {
+        label: 'Past Events',
+        route: '/events/past',
+      },
+    ],
   },
   {
-    label: 'My Profile',
-    route: '/profile',
+    label: 'Contact Us',
+    route: '/Contactus',
   },
-]
-
+  // {
+  //   label: 'Create Event',
+  //   route: '/events/create',
+  // },
+];
 export const eventDefaultValues = {
   title: '',
   description: '',
