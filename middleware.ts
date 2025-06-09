@@ -10,7 +10,8 @@
   '/events',
   '/api/webhook/clerk',
   '/api/webhook/stripe',
-  '/api/uploadthing'
+  '/api/uploadthing',
+  '/robot'
 ],
 
 

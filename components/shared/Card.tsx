@@ -123,7 +123,7 @@ const Card = async ({ event, hasOrderLink, hidePrice }: CardProps) => {
         {!hidePrice && (
           <div className="flex gap-3">
             <span className="text-sm font-semibold bg-green-500 text-white rounded-full px-4 py-1">
-              {event.isFree ? 'FREE' : `$${event.price}`}
+              {event.isFree ? 'FREE' : `£${event.price}`}
             </span>
             <p className="text-sm text-gray-400 bg-gray-600/30 rounded-full px-4 py-1">
               {event.category.name}

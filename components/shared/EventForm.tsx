@@ -48,58 +48,127 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
     defaultValues: initialValues
   })
  
-  async function onSubmit(values: z.infer<typeof eventFormSchema>) {
-    let uploadedImageUrl = values.imageUrl;
+  // async function onSubmit(values: z.infer<typeof eventFormSchema>) {
+  // console.log('Form values being submitted:', values); // Add this line
+  
+  // let uploadedImageUrl = values.imageUrl;
+  // // ... rest of your code
 
-    if(files.length > 0) {
-      const uploadedImages = await startUpload(files)
 
-      if(!uploadedImages) {
-        return
-      }
+  //   if(files.length > 0) {
+  //     const uploadedImages = await startUpload(files)
 
-      uploadedImageUrl = uploadedImages[0].url
+  //     if(!uploadedImages) {
+  //       return
+  //     }
+
+  //     uploadedImageUrl = uploadedImages[0].url
+  //   }
+
+  //   if(type === 'Create') {
+  //     try {
+  //       const newEvent = await createEvent({
+  //         event: { ...values, imageUrl: uploadedImageUrl },
+  //         userId,
+  //         path: '/profile'
+  //       })
+
+  //       if(newEvent) {
+  //         form.reset();
+  //         router.push(`/events/${newEvent._id}`)
+  //       }
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+
+  //   if(type === 'Update') {
+  //     if(!eventId) {
+  //       router.back()
+  //       return;
+  //     }
+
+  //     try {
+  //       const updatedEvent = await updateEvent({
+  //         userId,
+  //         event: { ...values, imageUrl: uploadedImageUrl, _id: eventId },
+  //         path: `/events/${eventId}`
+  //       })
+
+  //       if(updatedEvent) {
+  //         form.reset();
+  //         router.push(`/events/${updatedEvent._id}`)
+  //       }
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  // }
+ 
+  // Updated onSubmit function for EventForm.tsx
+async function onSubmit(values: z.infer<typeof eventFormSchema>) {
+  let uploadedImageUrl = values.imageUrl;
+
+  if(files.length > 0) {
+    const uploadedImages = await startUpload(files)
+
+    if(!uploadedImages) {
+      return
     }
 
-    if(type === 'Create') {
-      try {
-        const newEvent = await createEvent({
-          event: { ...values, imageUrl: uploadedImageUrl },
-          userId,
-          path: '/profile'
-        })
+    uploadedImageUrl = uploadedImages[0].url
+  }
 
-        if(newEvent) {
-          form.reset();
-          router.push(`/events/${newEvent._id}`)
-        }
-      } catch (error) {
-        console.log(error);
+  if(type === 'Create') {
+    try {
+      const result = await createEvent({
+        event: { ...values, imageUrl: uploadedImageUrl },
+        userId,
+        path: '/profile'
+      })
+
+      if(result?.success && result.data) {
+        form.reset();
+        router.push(`/events/${result.data._id}`)
+      } else {
+        // Handle error case
+        console.error('Failed to create event:', result?.error || 'Unknown error')
+        // You can add toast notification here
+        alert(result?.error || 'Failed to create event. Please try again.')
       }
-    }
-
-    if(type === 'Update') {
-      if(!eventId) {
-        router.back()
-        return;
-      }
-
-      try {
-        const updatedEvent = await updateEvent({
-          userId,
-          event: { ...values, imageUrl: uploadedImageUrl, _id: eventId },
-          path: `/events/${eventId}`
-        })
-
-        if(updatedEvent) {
-          form.reset();
-          router.push(`/events/${updatedEvent._id}`)
-        }
-      } catch (error) {
-        console.log(error);
-      }
+    } catch (error) {
+      console.error('Error creating event:', error);
+      alert('Failed to create event. Please check your connection and try again.')
     }
   }
+
+  if(type === 'Update') {
+    if(!eventId) {
+      router.back()
+      return;
+    }
+
+    try {
+      const result = await updateEvent({
+        userId,
+        event: { ...values, imageUrl: uploadedImageUrl, _id: eventId },
+        path: `/events/${eventId}`
+      })
+
+      if(result?.success && result.data) {
+        form.reset();
+        router.push(`/events/${result.data._id}`)
+      } else {
+        // Handle error case
+        console.error('Failed to update event:', result?.error || 'Unknown error')
+        alert(result?.error || 'Failed to update event. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error updating event:', error);
+      alert('Failed to update event. Please check your connection and try again.')
+    }
+  }
+}
 
   return (
     <Form {...form}>
